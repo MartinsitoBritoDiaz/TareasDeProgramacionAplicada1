@@ -55,7 +55,7 @@
     <Compile Include="Tarea1\Divisas.cs" />
     <Compile Include="Tarea1\Par.cs" />
     <Compile Include="Tarea1\Potencia.cs" />
-    <Compile Include="Tarea1\Program.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tarea1\ConversorGR.cs" />
     <Compile Include="Tarea1\Nombre.cs" />
@@ -63,6 +63,9 @@
     <Compile Include="Tarea1\Promedio.cs" />
     <Compile Include="Tarea1\Semana.cs" />
     <Compile Include="Tarea1\TablaM.cs" />
+    <Compile Include="Tarea2\Escuela.cs" />
+    <Compile Include="Tarea2\Factorial.cs" />
+    <Compile Include="Tarea2\Numeros.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

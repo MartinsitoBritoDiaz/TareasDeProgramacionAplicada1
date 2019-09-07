@@ -1,4 +1,5 @@
 ﻿using EjerciciosLibroProgramadorTotal.Tarea1;
+using EjerciciosLibroProgramadorTotal.Tarea2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,8 @@ namespace EjerciciosLibroProgramadorTotal
             {
                 Console.Clear();
                 Console.WriteLine("\n\t\tMenu de los ejercicios");
-                Console.WriteLine("\n\tTarea 1");
-                Console.WriteLine("\n\n(1)- Imprimir mi nombre nombre y agregarle otro mensaje.");
+                Console.WriteLine("\n\t**------Tarea 1------**");
+                Console.WriteLine("\n(1)- Imprimir mi nombre nombre y agregarle otro mensaje.");
                 Console.WriteLine("(2)- Perimetro de poligono regular.");
                 Console.WriteLine("(3)- Conversor de grados a radianes.");
                 Console.WriteLine("(4)- Conversor de grados centigrados a fahrenheit.");
@@ -29,7 +30,12 @@ namespace EjerciciosLibroProgramadorTotal
                 Console.WriteLine("(9)- Tabla de multiplicar.");
                 Console.WriteLine("(10)- Potencia de cualquier numero.");
                 Console.WriteLine("(11)- Promedio de edad.");
-                Console.WriteLine("(12)- Salir.");
+
+                Console.WriteLine("\n\n\t**------Tarea 2------**");
+                Console.WriteLine("\n(12)-Calcular factorial de un numero.");
+                Console.WriteLine("(13)-Cadena de numeros escritos en palabras.");
+                Console.WriteLine("(14)-Ejercicios del capitulo 6.");
+                Console.WriteLine("(19)- Salir.");
                 Console.Write("\n|-Digite el numero del programa que desea abrir: ");
 
                 opcion = Convert.ToInt32(Console.ReadLine());         
@@ -143,8 +149,41 @@ namespace EjerciciosLibroProgramadorTotal
                             Console.ReadKey();
                             break;
                         }
+
+                    case 12:
+                        {
+                            Console.Clear();
+
+                            Factorial factorial = new Factorial();
+                            factorial.Calcular();
+                            Console.ReadKey();
+                            break;
+                        }
+                    case 13:
+                        {
+                            Console.Clear();
+
+                            Numeros numeros = new Numeros();
+                            numeros.Evaluar();
+                            Console.ReadKey();
+                            break;
+                        }
+                    case 14:
+                        {
+                            Console.Clear();
+
+                            Escuela escuela = new Escuela();
+                            escuela.principal();
+                            Console.ReadKey();
+                            break;
+                        }
+                    default: 
+                        {
+                            Console.WriteLine("El ejercicio selecionado no esta disponible");
+                            break;
+                        }
                 }
-            } while (opcion != 12);
+            }while (opcion != 19);
         }
     }
 }
