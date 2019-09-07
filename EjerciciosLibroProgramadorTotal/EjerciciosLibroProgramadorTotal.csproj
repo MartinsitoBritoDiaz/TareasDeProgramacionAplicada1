@@ -63,9 +63,15 @@
     <Compile Include="Tarea1\Promedio.cs" />
     <Compile Include="Tarea1\Semana.cs" />
     <Compile Include="Tarea1\TablaM.cs" />
+    <Compile Include="Tarea2\Agenda.cs" />
+    <Compile Include="Tarea2\Cadenas.cs" />
+    <Compile Include="Tarea2\FormatoAMPM.cs" />
+    <Compile Include="Tarea2\Diccionario.cs" />
     <Compile Include="Tarea2\Escuela.cs" />
     <Compile Include="Tarea2\Factorial.cs" />
+    <Compile Include="Tarea2\Jagged.cs" />
     <Compile Include="Tarea2\Numeros.cs" />
+    <Compile Include="Tarea2\SalonClases.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

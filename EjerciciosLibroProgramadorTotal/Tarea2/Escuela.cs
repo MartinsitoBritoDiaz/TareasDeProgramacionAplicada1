@@ -13,9 +13,6 @@ namespace EjerciciosLibroProgramadorTotal.Tarea2
         private int n { get; set; }
         private int m { get; set; }
         private string valor { get; set; }
-        private float  suma { get; set; }
-        private float minima { get; set; }
-        private float maxima { get; set; }
 
         public Escuela()
         {
@@ -24,9 +21,6 @@ namespace EjerciciosLibroProgramadorTotal.Tarea2
             n = 0;
             m = 0;
             valor = "";
-            suma = 0.0f;
-            minima = 10.0f;
-            maxima = 0.0f;
         }
 
         public void principal()
@@ -66,11 +60,13 @@ namespace EjerciciosLibroProgramadorTotal.Tarea2
                 {
                     Console.WriteLine("\tEl alumno {0} tiene {1} ", m, calif[n][m]);
                 }
-                Console.WriteLine("\tEl promedio de calificaciones de este salon es: {0}", calcularPromedio(calif, salones, n));
+                Console.WriteLine("\tEl promedio de calificaciones de este salon es: {0}", calcularPromedio(calif, n));
+                Console.WriteLine("\tLa calificacion menor de este salon es: {0}", Menor(calif, n));
+                Console.WriteLine("\tLa calificacion mayor de este salon es: {0}", Mayor(calif, n));
             }
         }
 
-        private float calcularPromedio(float[][] array, int salones, int n)
+        private float calcularPromedio(float[][] array, int n)
         {
             int m;
             float suma = 0;
@@ -84,5 +80,36 @@ namespace EjerciciosLibroProgramadorTotal.Tarea2
             return (suma / cantidad);
         }
 
+        private float Menor(float[][] array, int n)
+        {
+            int m;
+            float menor = array[n][0];
+
+            for (m = 1; m < array[n].GetLength(0); m++)
+            {
+                 if(array[n][m] < menor)
+                {
+                    menor = array[n][m];
+                }
+            }
+
+            return menor;
+        }
+
+        private float Mayor(float[][] array, int n)
+        {
+            int m;
+            float mayor = array[n][0];
+
+            for (m = 1; m < array[n].GetLength(0); m++)
+            {
+                if (array[n][m] > mayor)
+                {
+                    mayor = array[n][m];
+                }
+            }
+
+            return mayor;
+        }
     }
 }

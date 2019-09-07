@@ -35,9 +35,14 @@ namespace EjerciciosLibroProgramadorTotal
                 Console.WriteLine("\n(12)-Calcular factorial de un numero.");
                 Console.WriteLine("(13)-Cadena de numeros escritos en palabras.");
                 Console.WriteLine("(14)-Ejercicios del capitulo 6.");
-                Console.WriteLine("(19)- Salir.");
+                Console.WriteLine("(15)-Pasar un arreglo Jagged como parametro en funcion.");
+                Console.WriteLine("(16)-Calcular promedio, maxima y minima calificaion ArrayList.");
+                Console.WriteLine("(17)-Diccionario de palabras.");
+                Console.WriteLine("(18)-Agenda telefonica.");
+                Console.WriteLine("(19)-Formato de hora AM/PM.");
+                Console.WriteLine("(20)-Comparar cadenas.");
+                Console.WriteLine("\n\n(21)- Salir.");
                 Console.Write("\n|-Digite el numero del programa que desea abrir: ");
-
                 opcion = Convert.ToInt32(Console.ReadLine());         
                 switch (opcion)
                 {
@@ -177,13 +182,63 @@ namespace EjerciciosLibroProgramadorTotal
                             Console.ReadKey();
                             break;
                         }
+                    case 15:
+                        {
+                            Console.Clear();
+
+                            Jagged jagged = new Jagged();
+                            jagged.Comprobar();
+                            Console.ReadKey();
+                            break;
+                        }
+                    case 16:
+                        {
+                            Console.Clear();
+
+                            SalonClases salonDeClases = new SalonClases();
+                            salonDeClases.Clases();
+                            Console.ReadKey();
+                            break;
+                        }
+                    case 17:
+                        {
+                            Console.Clear();
+                            Diccionario diccionario = new Diccionario();
+                            diccionario.metodo();
+                             Console.ReadKey();
+                            break;
+                        }
+                    case 18:
+                        {
+                            Console.Clear();
+                            Agenda agenda = new Agenda();
+                            agenda.metodo();
+                            Console.ReadKey();
+                            break;
+                        }
+                    case 19:
+                        {
+                            Console.Clear();
+                            FormatoAMPM formato = new FormatoAMPM();
+                            formato.Metodo();
+                            Console.ReadKey();
+                            break;
+                        }
+                    case 20:
+                        {
+                            Console.Clear();
+                            Cadenas cadena = new Cadenas();
+                            cadena.metodo();
+                            Console.ReadKey();
+                            break;
+                        }
                     default: 
                         {
                             Console.WriteLine("El ejercicio selecionado no esta disponible");
                             break;
                         }
                 }
-            }while (opcion != 19);
+            }while (opcion != 21);
         }
     }
 }
