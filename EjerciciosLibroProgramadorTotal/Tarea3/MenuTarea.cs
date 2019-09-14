@@ -44,12 +44,14 @@ namespace EjerciciosLibroProgramadorTotal
         private void ProductosDeUnaTiendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ejercicio1Form ejercicio = new Ejercicio1Form();
+            ejercicio.MdiParent = this;
             ejercicio.Show();
         }
 
         private void InformacionDeMascotaYSuDueñoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ejercicio2Form ejercicio = new Ejercicio2Form();
+            ejercicio.MdiParent = this;
             ejercicio.Show();
         }
 
@@ -57,36 +59,42 @@ namespace EjerciciosLibroProgramadorTotal
         {
 
             Ejercicio3Form ejercicio = new Ejercicio3Form();
+            ejercicio.MdiParent = this;
             ejercicio.Show();
         }
 
         private void InventarioDeUnaTiendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ejercicio4Form ejercicio = new Ejercicio4Form();
+            ejercicio.MdiParent = this;
             ejercicio.Show();
         }
 
         private void EstudiantesDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ejercicio5Form ejercicio = new Ejercicio5Form();
+            ejercicio.MdiParent = this;
             ejercicio.Show();
         }
 
         private void PoligonoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ejercicio6Form ejercicio = new Ejercicio6Form();
+            ejercicio.MdiParent = this;
             ejercicio.Show();
         }
 
         private void PropiedadesAPoligonosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ejercicio7Form ejercicio = new Ejercicio7Form();
+            ejercicio.MdiParent = this;
             ejercicio.Show();
         }
 
         private void DepurarFactorialToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ejercicio8Form ejercicio = new Ejercicio8Form();
+            ejercicio.MdiParent = this;
             ejercicio.Show();
         }
     }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MenuTarealabel = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.capitulo9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosDeUnaTiendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,16 +43,6 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // MenuTarealabel
-            // 
-            this.MenuTarealabel.AutoSize = true;
-            this.MenuTarealabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MenuTarealabel.Location = new System.Drawing.Point(204, 74);
-            this.MenuTarealabel.Name = "MenuTarealabel";
-            this.MenuTarealabel.Size = new System.Drawing.Size(152, 29);
-            this.MenuTarealabel.TabIndex = 1;
-            this.MenuTarealabel.Text = "Menú tarea 3";
-            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -63,7 +52,7 @@
             this.capitulo12ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(601, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(960, 28);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -148,7 +137,7 @@
             // depurarFactorialToolStripMenuItem
             // 
             this.depurarFactorialToolStripMenuItem.Name = "depurarFactorialToolStripMenuItem";
-            this.depurarFactorialToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.depurarFactorialToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
             this.depurarFactorialToolStripMenuItem.Text = "Depurar factorial";
             this.depurarFactorialToolStripMenuItem.Click += new System.EventHandler(this.DepurarFactorialToolStripMenuItem_Click);
             // 
@@ -156,9 +145,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(601, 339);
-            this.Controls.Add(this.MenuTarealabel);
+            this.ClientSize = new System.Drawing.Size(960, 579);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuTarea";
             this.Text = "MenúTarea";
@@ -171,7 +160,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label MenuTarealabel;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem capitulo9ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productosDeUnaTiendaToolStripMenuItem;
