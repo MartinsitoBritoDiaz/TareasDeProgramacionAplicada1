@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,6 +48,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tarea3\Ejercicio1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio1Form.Designer.cs">
+      <DependentUpon>Ejercicio1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio2Form.Designer.cs">
+      <DependentUpon>Ejercicio2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio3Form.Designer.cs">
+      <DependentUpon>Ejercicio3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio4Form.Designer.cs">
+      <DependentUpon>Ejercicio4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio5Form.Designer.cs">
+      <DependentUpon>Ejercicio5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio6Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio6Form.Designer.cs">
+      <DependentUpon>Ejercicio6Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio7Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio7Form.Designer.cs">
+      <DependentUpon>Ejercicio7Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio8Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\Ejercicio8Form.Designer.cs">
+      <DependentUpon>Ejercicio8Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\Estudiantes.cs" />
+    <Compile Include="Tarea3\Factorial.cs" />
+    <Compile Include="Tarea3\MenuTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\MenuTarea.Designer.cs">
+      <DependentUpon>MenuTarea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -72,15 +131,46 @@
     <Compile Include="Tarea2\Jagged.cs" />
     <Compile Include="Tarea2\Numeros.cs" />
     <Compile Include="Tarea2\SalonClases.cs" />
+    <Compile Include="Tarea3\Poligono.cs" />
+    <Compile Include="Tarea3\PoligonoValidar.cs" />
+    <Compile Include="Tarea3\Tienda.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Tarea3\Ejercicio1Form.resx">
+      <DependentUpon>Ejercicio1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\Ejercicio2Form.resx">
+      <DependentUpon>Ejercicio2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\Ejercicio3Form.resx">
+      <DependentUpon>Ejercicio3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\Ejercicio4Form.resx">
+      <DependentUpon>Ejercicio4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\Ejercicio5Form.resx">
+      <DependentUpon>Ejercicio5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\Ejercicio6Form.resx">
+      <DependentUpon>Ejercicio6Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\Ejercicio7Form.resx">
+      <DependentUpon>Ejercicio7Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\Ejercicio8Form.resx">
+      <DependentUpon>Ejercicio8Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\MenuTarea.resx">
+      <DependentUpon>MenuTarea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

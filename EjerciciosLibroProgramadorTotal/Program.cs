@@ -1,18 +1,23 @@
 ﻿using EjerciciosLibroProgramadorTotal.Tarea1;
 using EjerciciosLibroProgramadorTotal.Tarea2;
+using EjerciciosLibroProgramadorTotal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace EjerciciosLibroProgramadorTotal
+namespace EjerciciosLibroProgramadorTotal1
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            int opcion;
+           int opcion;
 
             do
             {
@@ -41,9 +46,12 @@ namespace EjerciciosLibroProgramadorTotal
                 Console.WriteLine("(18)-Agenda telefonica.");
                 Console.WriteLine("(19)-Formato de hora AM/PM.");
                 Console.WriteLine("(20)-Comparar cadenas.");
-                Console.WriteLine("\n\n(21)- Salir.");
+
+                Console.WriteLine("\n\n\t**--------Tarea 3---------**");
+                Console.WriteLine("(21)- Menu tarea 3");
+                Console.WriteLine("\n\n(22)- Salir.");
                 Console.Write("\n|-Digite el numero del programa que desea abrir: ");
-                opcion = Convert.ToInt32(Console.ReadLine());         
+                opcion = Convert.ToInt32(Console.ReadLine());
                 switch (opcion)
                 {
                     case 1:
@@ -107,7 +115,7 @@ namespace EjerciciosLibroProgramadorTotal
                         }
                     case 7:
                         {
-                            Console.Clear(); 
+                            Console.Clear();
 
                             Semana objSemana = new Semana();
                             objSemana.Evaluar();
@@ -205,7 +213,7 @@ namespace EjerciciosLibroProgramadorTotal
                             Console.Clear();
                             Diccionario diccionario = new Diccionario();
                             diccionario.metodo();
-                             Console.ReadKey();
+                            Console.ReadKey();
                             break;
                         }
                     case 18:
@@ -232,13 +240,25 @@ namespace EjerciciosLibroProgramadorTotal
                             Console.ReadKey();
                             break;
                         }
-                    default: 
+
+                    case 21:
+                        {
+                            Application.EnableVisualStyles();
+                            Application.SetCompatibleTextRenderingDefault(false);
+                            Application.Run(new MenuTarea());
+                            Console.ReadKey();
+                            break;
+                        }
+                    default:
                         {
                             Console.WriteLine("El ejercicio selecionado no esta disponible");
                             break;
                         }
                 }
-            }while (opcion != 21);
+            } while (opcion != 22);
+            
+
+            
         }
     }
 }
